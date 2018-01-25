@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=1">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <title>ONG</title>
+
+        <meta property="og:url"           content="" />
+    	<meta property="og:locale" 		  content="pt_BR" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="" />
+        <meta property="og:description"   content="" />
+        <meta property="og:image"         content="images/logo.png" />
+
+        <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <div class="middle">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Logo" />
+                </a>
+                <div class="social">
+                    <span>Compartilhe</span>
+                    <a href="#" trget="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" trget="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" trget="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="content bg-animal">
+            <div class="middle2">
+                <h1 title="Thanks for Your Support!">Thanks for Your Support!</h1>
+                <div class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Nemo veritatis quasi rem maxime enim doloribus hic, facilis quia 
+                    assumenda exercitationem ipsum iusto dignissimos perspiciatis iure nisi quod qui quisquam aperiam.
+                </div> 
+                <form id="formDados" method="post" name="formDados">
+                    <div class="box-white">
+                        <div class="box">
+                            <h2 title="Selecione um valor">Selecione um valor</h2>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <div class="box-select">
+                                        <select name="frequency" id="tx_periodo">
+                                            <option value="unica">Única</option>
+                                            <option value="mensal">Mensal</option>
+                                            <option value="semestral">Semestral</option>
+                                            <option value="anual">Anual</option>
+                                        </select>
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-12 box-gray">
+                                    <input type="text" placeholder="R$ 30,00" name="value" id="tx_valor">
+                                    <span>Valor mínimo de R$ 15,00</span>
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <div class="box-border-top">
+                            <div class="box-error">
+                                <i class="ico-info"></i> Corrija os campos abaixo
+                            </div>
+                            <h3 title="Dados pessoais">Dados pessoais</h3>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <label for="tx_nome">Nome completo<span>*</span></label>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <input type="text" placeholder="Primeiro Nome" name="first_name" id="tx_nome">
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <input type="text" placeholder="Sobrenome" name="last_name" id="tx_lastname">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <label for="tx_email">Email<span>*</span></label>
+                                </div>
+                                <div class="col-md-8 col-sm-12 col-xs-12">
+                                    <input type="email" placeholder="email@email.com" name="email" id="tx_email">
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="box-border-top">
+                            <h3 title="Dados de pagamento">Dados de pagamento <span class="dados-seguros">Dados seguros</span></h3>
+                            
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <label for="tx_cpf">CPF<span>*</span></label>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <input type="text" maxlength="11" placeholder="000.000.000-00" name="document" id="tx_cpf">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <label for="tx_numberCard">Número de cartão<span>*</span></label>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <input type="text" maxlength="16" placeholder="0000 0000 0000 0000" name="card_number" id="tx_numberCard">
+                                </div>
+                                <div class="col-md-2 col-sm-12 col-xs-12">
+                                    <input type="text" maxlength="3" placeholder="CVV" name="cvv" id="tx_cvv">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <label for="tx_validade">Validade do cartão<span>*</span></label>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-xs-12">
+                                    <div class="input-date">
+                                        <input type="text" maxlength="5" placeholder="00/00" name="validity" id="tx_validade">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-border-top confirmacao">
+                            <div class="box-gray">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <strong>R$ <span class="valor">00,00</span> <span class="periodo"></span></strong>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-12">
+                                        <button name="enviar" type="button" class="btn" id="enviar">Confirmar doação</button>
+                                        <label for="aceitar">
+                                            <input type="checkbox" name="accept_contact" id="aceitar">
+                                            Aceito ser contatado para receber informaçãoes sobre a ONG
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="middle">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <a href="" class="logo">
+                            <img src="images/logo-footer.png" alt="Logo">
+                        </a>
+                        <div class="text">
+                            <strong>Está com dúvidas?</strong>
+                            <p>Para capitais: 0800 00 00 000</p>
+                            <p>Para outras localidades: 11 1234 56789</p>
+                            <p>Por email: contato@ong.org</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="copyright">
+                            <p>Copyright 2017</p>
+                            <a href="#" class="logo-trackmob">
+                                <img src="images/trackmob.png" alt="Trackmob">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery/dist/jquery.min.js" ></script>
+        <script src="js/bootstrap/dist/js/bootstrap.min.js" ></script>
+        <script src="js/jquery.maskedinput-master/dist/jquery.maskedinput.js"></script>
+        <script src="js/plentz-jquery-maskmoney-cdbeeac/dist/jquery.maskMoney.min.js"></script>
+        <script src="js/script.js" ></script>
+    </body>
+</html>
