@@ -53,17 +53,17 @@
                             <div class="row">
                                 <div class="col-md-4 col-sm-4 col-xs-12">
                                     <div class="box-select">
-                                        <select name="frequency" id="tx_periodo">
-                                            <option value="unica">Única</option>
-                                            <option value="mensal">Mensal</option>
-                                            <option value="semestral">Semestral</option>
-                                            <option value="anual">Anual</option>
+                                        <select name="frequency" id="frequency">
+                                            <option value="Única">Única</option>
+                                            <option value="Mensal">Mensal</option>
+                                            <option value="Semestral">Semestral</option>
+                                            <option value="Anual">Anual</option>
                                         </select>
                                         <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-sm-8 col-xs-12 box-gray">
-                                    <input type="text" placeholder="R$ 30,00" name="value" id="tx_valor">
+                                    <input type="text" placeholder="R$ 30,00" name="value" id="value">
                                     <span>Valor mínimo de R$ 15,00</span>
                                 </div>
                             </div>
@@ -76,21 +76,21 @@
                             <h3 title="Dados pessoais">Dados pessoais</h3>
                             <div class="row">
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <label for="tx_nome">Nome completo<span>*</span></label>
+                                    <label for="first_name">Nome completo<span>*</span></label>
                                 </div>
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <input type="text" placeholder="Primeiro Nome" name="first_name" id="tx_nome">
+                                    <input type="text" placeholder="Primeiro Nome" name="first_name" id="first_name">
                                 </div>
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <input type="text" placeholder="Sobrenome" name="last_name" id="tx_lastname">
+                                    <input type="text" placeholder="Sobrenome" name="last_name" id="last_name">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <label for="tx_email">Email<span>*</span></label>
+                                    <label for="email">Email<span>*</span></label>
                                 </div>
                                 <div class="col-md-8 col-sm-12 col-xs-12">
-                                    <input type="email" placeholder="email@email.com" name="email" id="tx_email">
+                                    <input type="email" placeholder="email@email.com" name="email" id="email">
                                 </div>
                             </div>
                         </div>
@@ -100,30 +100,30 @@
                             
                             <div class="row">
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <label for="tx_cpf">CPF<span>*</span></label>
+                                    <label for="document">CPF<span>*</span></label>
                                 </div>
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <input type="text" maxlength="11" placeholder="000.000.000-00" name="document" id="tx_cpf">
+                                    <input type="text" maxlength="11" placeholder="000.000.000-00" name="document" id="document">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <label for="tx_numberCard">Número de cartão<span>*</span></label>
+                                    <label for="card_number">Número de cartão<span>*</span></label>
                                 </div>
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <input type="text" maxlength="16" placeholder="0000 0000 0000 0000" name="card_number" id="tx_numberCard">
+                                    <input type="text" maxlength="16" placeholder="0000 0000 0000 0000" name="card_number" id="card_number">
                                 </div>
                                 <div class="col-md-2 col-sm-12 col-xs-12">
-                                    <input type="text" maxlength="3" placeholder="CVV" name="cvv" id="tx_cvv">
+                                    <input type="text" maxlength="3" placeholder="CVV" name="cvv" id="cvv">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4 col-sm-12 col-xs-12">
-                                    <label for="tx_validade">Validade do cartão<span>*</span></label>
+                                    <label for="validity">Validade do cartão<span>*</span></label>
                                 </div>
                                 <div class="col-md-4 col-sm-12 col-xs-12">
                                     <div class="input-date">
-                                        <input type="text" maxlength="5" placeholder="00/00" name="validity" id="tx_validade">
+                                        <input type="text" maxlength="5" placeholder="00/00" name="validity" id="validity">
                                     </div>
                                 </div>
                             </div>
@@ -132,12 +132,12 @@
                             <div class="box-gray">
                                 <div class="row">
                                     <div class="col-md-4 col-sm-4 col-xs-12">
-                                        <strong>R$ <span class="valor">00,00</span> <span class="periodo"></span></strong>
+                                        <strong>R$ <span class="valor">00,00</span> <span class="periodo">Única</span></strong>
                                     </div>
                                     <div class="col-md-8 col-sm-8 col-xs-12">
                                         <button name="enviar" type="button" class="btn" id="enviar">Confirmar doação</button>
-                                        <label for="aceitar">
-                                            <input type="checkbox" name="accept_contact" id="aceitar">
+                                        <label for="accept_contact">
+                                            <input type="checkbox" name="accept_contact" id="accept_contact">
                                             Aceito ser contatado para receber informaçãoes sobre a ONG
                                         </label>
                                     </div>

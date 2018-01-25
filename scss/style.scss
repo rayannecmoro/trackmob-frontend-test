@@ -1,0 +1,180 @@
+* { margin: 0; padding: 0; color: inherit; }
+a { cursor: pointer; display: block; text-decoration: none; }
+ul { list-style: none outside none; }
+img { border: 0 none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+h1, h2, h3, h4, h5 { font-weight: normal; }
+select, input[type='text'], textarea { -webkit-appearance: none; }
+input, textarea, select { border-radius: 0; box-shadow: none; outline: 0; }
+html { width: 100%; min-height: 100%; overflow:visible;}
+ul li { list-style: none; }
+a, a:hover, a:focus { text-decoration: none; outline: none; }
+button:focus { outline: none; }
+// ** //
+@import "font-awesome/font-awesome";
+@import "font";
+// ** //
+$black: #000000; 
+$white: #ffffff; 
+$blue: #039be5;
+$blue02: #013247;
+$blue03: #2196f3;
+$yellow: #ff9800;
+$red: #ff5252;
+$gray: #757575;
+$gray02: #424242;
+$gray03: #9e9e9e;
+$bg: #fafafa;
+$bg02: #f5f5f5;
+$border: #d2d2d2;
+$bg03: #e0e0e0;
+
+$fontBL: 'robotoblack';
+$fontB: 'robotobold';
+$fontM: 'robotomedium';
+$fontT: 'robotothin';
+$fontL: 'robotolight';
+$fontR: 'robotoregular';
+$fontI: 'robotoitalic';
+$fontLI: 'robotolight_italic';
+
+// h2 24 color 
+
+// label 16 
+
+// font footer 14
+
+// alerta font 16
+
+
+// ** //
+body {width:100%; background: $white; display:block; overflow:visible; font-family:$fontL; font-weight: lighter; color: $black; padding: 0px; margin: 0px; font-size: 13px; -webkit-font-smoothing: antialiased; }
+button:focus { outline: none; }
+.padraoLeft { position: relative; float:left; width: 100%; }
+.relativeRight { position: relative; float:right; }
+.relativeLeft { position: relative; float:left; }
+.relativeInline { position: relative; display: inline-block; }
+.relativeAuto { position: relative; margin: 0 auto !important; clear: both; }
+// ** //
+.middle { @extend .relativeAuto; width: 100%; max-width: 1345px; overflow: hidden; padding: 0 30px; }
+.middle2 { @extend .relativeAuto; width: 100%; max-width: 872px; overflow:hidden; padding: 0 30px; }
+// ** //
+::-webkit-input-placeholder { color: rgba($gray03, 1.0); }
+:-moz-placeholder { color: rgba($gray03, 1.0); }
+::-moz-placeholder { color: rgba($gray03, 1.0); }
+:-ms-input-placeholder { color: rgba($gray03, 1.0); }
+// ** //
+header{@extend .padraoLeft; min-height:112px; background:$white;
+	.logo{@extend .relativeInline; vertical-align:top; line-height:112px;
+		img{@extend .relativeInline; vertical-align:middle; max-height:112px;}
+	}
+	.social{@extend .relativeRight; padding:35px 0; line-height:42px; font-size:14px; color:$gray; font-family:$fontB;
+		span{@extend .relativeInline;}
+		a{@extend .relativeInline; vertical-align:top; transition: all .5s linear; line-height:32px; width:32px; height:32px; text-align:center; border-radius:50%; background:$bg03; color:$white; font-size:16px; margin-left:15px;}
+		a:hover{background:$gray03;}
+	}
+}
+footer{@extend .padraoLeft; min-height:125px; background:$blue;
+	.logo{@extend .relativeLeft; vertical-align:top; line-height:125px; width:auto; margin-right:30px;
+		img{@extend .relativeInline; vertical-align:middle; max-height:125px;}
+	}
+	.text{color:$white; font-size:13px; font-family:$fontL; line-height:18px; max-width:400px; margin-top:30px;
+		p{margin:0;}
+	}
+	.copyright{@extend .relativeRight; color:$white; font-size:14px; line-height:18px; font-family:$fontT; margin-top:30px;
+		p{@extend .padraoLeft; text-align:right; margin-bottom:5px;}
+		.logo-trackmob{@extend .relativeRight; font-size:0;}
+	}
+}
+.content{@extend .padraoLeft; }
+.bg-animal{background:url('../images/bg-animal.jpg') $blue02 no-repeat top center; background-size:100% auto; padding-top:220px;
+	h1{@extend .padraoLeft; font-size:40px; line-height:44px; color:$blue03; margin: 0 0 30px 0; font-family:$fontB;}
+	.text{@extend .padraoLeft; font-size:15px; line-height:20px; color:$gray; max-width:640px;
+		p{@extend .padraoLeft; margin:0;}
+		strong{font-family:$fontM;}
+	}
+	form{@extend .padraoLeft;
+		input{@extend .padraoLeft; background:$bg; border:solid 1px $border; border-radius:3px; height:40px; line-height:40px; padding:0 10px; font-size:14px; color:$gray03; margin-bottom:15px; font-family:$fontLI;}
+		label{@extend .padraoLeft; font-size:16px; line-height:40px; color: $gray03; margin:0 0 15px 0; font-family:$fontT;
+			span{color:$red; margin-left:5px;}
+		}
+		.erro{
+			input{border-color:$red;}
+			label{color:$red;}
+		}
+		input[type="checkbox"]{width:15px; height:15px; line-height:15px; margin:14px 10px 0 0;}
+		.box-select{@extend .padraoLeft; background:$bg; overflow:hidden; border:solid 1px $border; border-radius:3px; height:40px; line-height:40px; font-size:14px; color:$gray03; margin-bottom:15px; font-family:$fontLI; margin-top:15px;
+			select{@extend .relativeLeft; width:calc(100% + 20px); background:none; height:40px; line-height:40px; font-size:14px; color:$gray03; font-family:$fontLI; border:0; padding-left:10px;}
+			.fa{position:absolute; top:14px; right:10px; z-index:8; font-size:12px; color:$gray02; }
+		}
+		.input-date{@extend .padraoLeft; background:$bg;
+			input{background:none; padding-right:35px;}
+		}
+		.input-date:before{ content:""; position:absolute; right:10px; top:0; background:url('../images/icone_calendario.png') no-repeat center; height:40px; width:22px;}
+		
+	}
+	h2, h3{@extend .padraoLeft; font-size:24px; line-height:28px; color: $gray02; font-family:$fontB; margin:0 0 30px 0;}
+	.btn{@extend .relativeInline; vertical-align:top; background:$yellow; transition: all .5s linear; max-width:100%; border-radius:6px; line-height:52px; text-align:center; color:$white; font-size:20px; font-family:$fontB; padding:0 30px; margin-bottom:15px;}
+	.btn:hover, .btn:focus{outline:none; text-decoration:none; box-shadow: 0 2px 5px rgba($gray,0.5);}
+	.box-white{@extend .padraoLeft; background:$white; margin-top:220px; padding:0; border-radius:4px; margin-bottom:56px; overflow:hidden;}
+	.box{@extend .padraoLeft; padding:45px 45px 25px 45px;}
+	.box-gray{background:$bg02; padding-top:15px; padding-bottom:15px;
+		span{@extend .padraoLeft; font-size:13px; color:$gray; line-height:18px; font-family:$fontL;}
+		input{margin-bottom:0;}
+		strong{@extend .relativeInline; font-size:18px; color:$gray02; font-family:$fontB;}
+		.valor, .periodo{@extend .relativeInline; float:none; width:auto; font-size:18px; color:$gray02; font-family:$fontB;}
+	}
+	.box-border-top{@extend .padraoLeft; border-top:solid 1px $border; background:$white; padding:30px 45px 5px 45px;}
+	
+	.dados-seguros{@extend .relativeInline; vertical-align:middle; font-family:$fontR; font-size:10px; background:$bg; border-radius:3px; height:22px; line-height:22px; padding:0 5px; color:$gray03;}
+	.dados-seguros:before{content:""; display:inline-block; vertical-align:middle; background:url('../images/icone_cadiado.png') no-repeat center; width:15px; height:15px; margin-right:5px;}
+	.confirmacao{padding:20px 0 0 0;
+		.box-gray{padding:30px 45px;}
+	}
+	.box-error{@extend .padraoLeft; background:$red; border-radius:3px; padding:16px 15px; font-size:15px; color:$white; line-height:22px; height:56px; font-family:$fontM; margin-bottom:30px;
+		.ico-info{@extend .relativeInline; vertical-align:middle;}
+		.ico-info:before{content:""; background:url('../images/icone_interrogacao.png') no-repeat 0 0; display:inline-block; vertical-align:top; width:21px; height:21px; margin-right:5px;}
+	}
+}
+
+@media (max-width:991px){
+	.bg-animal{padding-top:100px;
+		.box-white{margin-top:100px;}
+	}
+}
+@media (max-width:767px){
+	header{min-height:60px; padding:15px 0; line-height:normal;
+		.logo{line-height:normal; height:40px;
+			img{max-height:100%; display:inline-block;}
+		}
+		.social{font-size:0; padding:0;
+			a{margin-left:10px; font-size:16px;}
+		}
+	}
+	.bg-animal{ background-size:auto 600px;
+		h1{font-size:30px; line-height:34px;}
+		.box-gray{
+			strong{margin-bottom:15px; display:inline-block; width:100%; text-align:center;}
+			label{font-size:14px;}
+		}
+		.btn{padding:0 5px; font-size:16px; width:100%;}
+		.box-border-top{padding:15px 15px 5px 15px;}
+		.box{padding:15px 15px;}
+		h2, h3{font-size:20px; line-height:24px; margin-bottom:15px;}
+		form{
+			label{line-height:20px;}
+		}
+		.confirmacao{padding-bottom:15px;
+			.box-gray{padding:15px 15px;
+				
+			}
+		}
+	}
+	footer{
+		.logo{margin-right:10px;}
+		.copyright{width:100%; text-align:center;
+			p{width:100%; text-align:center;}
+			.logo-trackmob{float:none; display:inline-block; vertical-align:top; margin-bottom:15px;}
+		}
+	}
+}
